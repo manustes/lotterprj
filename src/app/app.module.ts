@@ -4,22 +4,30 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { lotterprj } from './app.component';
+
+import { AboutPage, ProjectionsPage, ResultsPage, TabsPage } from "../pages/index.pages";
+
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    lotterprj,
+    AboutPage,
+    ProjectionsPage,
+    ResultsPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(lotterprj)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    lotterprj,
+    AboutPage,
+    ProjectionsPage,
+    ResultsPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
