@@ -3,10 +3,10 @@
 
     <ion-segment>
       <ion-segment-button value="all">
-        Todas
+        {{ 'ALL' | translate }}
       </ion-segment-button>
       <ion-segment-button value="favorites">
-        Favoritas
+        {{ 'FAVORITES' | translate }}
       </ion-segment-button>
     </ion-segment>
 
@@ -19,7 +19,7 @@
 
   <ion-toolbar no-border-top>
     <ion-searchbar color="danger"
-                   placeholder="Búsqueda">
+                   placeholder="{{'SEARCH' | translate}}">
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>
@@ -66,7 +66,7 @@
   </ion-list>
 
   <ion-list-header [hidden]="shownSessions > 0">
-    No se encontraron datos.
+    {{'NO_DATA' | translate}}
   </ion-list-header>
 
 </ion-content>

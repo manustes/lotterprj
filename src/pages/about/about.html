@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Acerca de</ion-title>
+    <ion-title>{{'ABOUT' | translate}}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -10,6 +10,17 @@
   </div>
   <div padding class="about-info">
     <h4>Lottery</h4>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Idioma</ion-label>
+        <ion-select [(ngModel)]="idioma" interface="popover" (ionChange)="cambioIdioma($event)">
+          <ion-option value="es" selected>Español</ion-option>
+          <ion-option value="en">Ingles</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde pariatur eos neque repudiandae voluptate quidem, debitis est eius cumque! Neque magnam saepe deleniti! Sint reprehenderit eos, officiis ullam at asperiores.
     </p>
